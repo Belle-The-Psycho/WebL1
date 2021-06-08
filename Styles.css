@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'JUNGLEFE';
+    src: url(Font/JUNGLEFE.ttf)
+}
+
+body {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 4% 1fr 1fr 8%;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+
+h2 {
+    color: orange;
+    grid-column: 2/3;
+    font-size: 40px;
+    font-family: 'JUNGLEFE', fantasy;
+}
+
+nav a{
+    color: orange;
+    text-align: center;
+    grid-row: 2;
+    grid-column: 3/4;
+    text-decoration: none;
+    font-family: 'JUNGLEFE', fantasy;
+    font-size: 30px;
+}
+nav a:hover{
+    color: white;
+
+}
+
+nav {
+    grid-column: 3/4;
+    align-self: start;
+    text-align: center;
+    border-bottom: 2px solid orange;
+    display: flex;
+    justify-content: space-between;
+}
+
+.images {
+    width: 77%;
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+.images img {
+    margin: 0px auto;
+}
+
+
+.leftArrow,
+.rightArrow {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-self: center;
+}
+
+.scroller {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftArrow:hover,
+.rightArrow:hover {
+    background-color: grey;
+    border-radius: 20px;
+}
+
+section {
+    background-color: orange;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 80%;
+    font-family: 'JUNGLEFE', fantasy;
+    display: grid;
+    justify-self: center;
+    font-size: 30px;
+}
+
+.products {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    list-style: none;
+    color: black;
+    justify-self: center;
+
+}
+
+.shop {
+    background-color: orange;
+    min-height: 300px;
+    width: 80%;
+    margin: 30px auto;
+    list-style: none;
+}
+
+.products li img {
+    width: 100%;
+}
